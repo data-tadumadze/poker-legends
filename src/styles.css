@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
   font-family: "Arial";
   src: url("../src/assets/fonts/BPGArial.woff2") format("woff2"),
