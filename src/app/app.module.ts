@@ -10,6 +10,8 @@ import { StagesComponent } from './stages/stages.component';
 import { RankingComponent } from './ranking/ranking.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PrizesComponent } from './prizes/prizes.component';
+import { AdditionalInfoComponent } from './additional-info/additional-info.component';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { PrizesComponent } from './prizes/prizes.component';
     RankingComponent,
     LeaderboardComponent,
     PrizesComponent,
+    AdditionalInfoComponent,
+    TermsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
