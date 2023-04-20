@@ -1,0 +1,8 @@
+<div class="prizes bg-middleGray m-auto rounded-xl p-3 mb-5">
+    <div *ngFor="let i of arr" class="prize flex items-center rounded-xl m-auto mb-2">
+        <div class="divider mr-4"></div>
+        <img class="mr-3" src="{{icons[i]}}" alt="Icon">
+        <p class="text-white text-xs w-2/3">{{prizeDescr[i]}}</p>
+    </div>
+</div>
+

@@ -1,0 +1,35 @@
+<div class="leaderboard flex flex-col m-auto bg-middleGray rounded-xl p-5 mb-5">
+    <div class="leaderboard-header">
+        <span class="text-lightGray text-sm">ადგილი</span>
+        <span class="text-lightGray text-sm">ვაუჩერი</span>
+        <span class="text-lightGray text-sm">პრიზი</span>
+    </div>
+    <div class="leaderboard-container overflow-auto">
+        <div
+            class="position flex justify-between items-center m-auto border-2 border-lightGray mb-0.5 bg-darkGray rounded-full p-2">
+            <span
+                class="text-white  bg-lightGray rounded-full w-7 h-7 flex justify-center items-center text-xs">1</span>
+            <span class="text-white text-xs">---</span>
+            <div class="flex items-center">
+                <img class="w-5 mr-1" src="../../assets/icons/travel-icon-sm.png" alt="">
+                <span class="text-white text-xs">A კატეგორიის საგზური</span>
+            </div>
+        </div>
+        <div
+            class="position flex justify-between items-center m-auto border-2 border-lightGray mb-0.5 bg-darkGray rounded-full p-2">
+            <span class="text-white bg-lightGray rounded-full w-7 h-7 flex justify-center items-center text-xs">2</span>
+            <span class="text-white text-xs">---</span>
+            <div class="flex items-center">
+                <img class="w-5 mr-1" src="../../assets/icons/ticket-icon-sm.png" alt="">
+                <span class="text-white text-xs">B კატეგორიის საგზური</span>
+            </div>
+        </div>
+        <div *ngFor="let i of position"
+            class="position flex justify-between items-center m-auto border-2 border-lightGray mb-0.5 bg-darkGray rounded-full p-2">
+            <span
+                class="text-white bg-lightGray rounded-full w-7 h-7 flex justify-center items-center text-xs">{{i}}</span>
+            <span class="text-white text-xs">{{giftCard[i-3]}} ₾</span>
+            <span class="text-white text-xs">სპეც. ტურნირის ბილეთი</span>
+        </div>
+    </div>
+</div>
