@@ -1,0 +1,33 @@
+.mystical-key-container {
+  width: 99%;
+}
+
+.leaderboard {
+  width: 95%;
+  height: 45vh;
+}
+
+.leaderboard-container {
+  width: 95%;
+}
+
+.position {
+  width: 95%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #44494b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ef5a21;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f89067;
+}

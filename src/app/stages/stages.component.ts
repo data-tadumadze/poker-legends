@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class StagesComponent {
   @Output() divSelected = new EventEmitter<number>();
-  selectedDiv: number = 3;
+  selectedDiv: number = 1;
 
   selectDiv(divIndex: number) {
     this.selectedDiv = divIndex;

@@ -20,6 +20,7 @@ import { TournamentScoresComponent } from './tournament-scores/tournament-scores
 import { DailyTournamentsComponent } from './daily-tournaments/daily-tournaments.component';
 import { FestivalComponent } from './festival/festival.component';
 import { FinalTravelsComponent } from './final-travels/final-travels.component';
+import { MysticalKeyComponent } from './mystical-key/mystical-key.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { FinalTravelsComponent } from './final-travels/final-travels.component';
     DailyTournamentsComponent,
     FestivalComponent,
     FinalTravelsComponent,
+    MysticalKeyComponent,
   ],
   imports: [
     BrowserModule,

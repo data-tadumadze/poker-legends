@@ -1,3 +1,15 @@
 .travels-container {
   width: 99%;
 }
+
+.cashgame-div {
+  background-color: #282a2a;
+  height: 12vh;
+  margin-bottom: 2vh;
+}
+
+.cashgame-div-big {
+  background-color: #282a2a;
+  height: 19vh;
+  margin-bottom: 2vh;
+}

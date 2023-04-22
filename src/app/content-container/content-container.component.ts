@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./content-container.component.css'],
 })
 export class ContentContainerComponent {
-  selectedDiv: number = 3;
+  selectedDiv: number = 1;
 }

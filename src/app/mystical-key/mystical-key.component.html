@@ -1,0 +1,17 @@
+<div class="bg-middleGray flex flex-col justify-center rounded-xl pb-1 mb-10">
+    <div class="divider"></div>
+    <h4 class="text-brown text-4xl text-center py-2">მისტიური გასაღები</h4>
+    <div class="mystical-key-container bg-darkGray m-auto rounded-b-lg">
+        <p class="text-white text-xs text-center m-auto my-4 w-11/12">მოთამაშეები გარკვეული საპრიზო ადგილების დაკავების
+            შემთხვევაში მიიღებენ საიდუმლო გასაღებს</p>
+        <div class="leaderboard flex m-auto bg-middleGray rounded-xl p-5 mb-5">
+            <div class="leaderboard-container overflow-auto">
+                <div *ngFor="let i of position"
+                    class="position flex items-center m-auto border-2 border-lightGray mb-0.5 bg-darkGray rounded-full p-2">
+                    <span
+                        class="text-white  bg-lightGray rounded-full mr-5 w-7 h-7 flex justify-center items-center text-xs">{{i}}</span>
+                    <p class="text-white text-xs">{{ranking[i-1]}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
