@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-content-container',
   templateUrl: './content-container.component.html',
-  styleUrls: ['./content-container.component.css']
+  styleUrls: ['./content-container.component.css'],
 })
 export class ContentContainerComponent {
-
+  selectedDiv: number = 3;
 }

@@ -10,8 +10,10 @@
 .fixed-div {
   position: fixed;
   top: 6%;
-  left: 25.5%;
-  width: 48.5%;
+  left: 20.5%;
+  width: 58.5%;
+  z-index: 2;
+
 }
 
 .fixed-div div {
@@ -22,7 +24,7 @@
 
 .footer {
   position: fixed;
-  width: 50%;
+  width: 60%;
   bottom: 0;
   z-index: 2;
 }

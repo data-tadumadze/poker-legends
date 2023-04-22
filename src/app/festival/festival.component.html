@@ -1,0 +1,52 @@
+<div class="bg-darkGray border-4 border-middleGray flex flex-col justify-center rounded-2xl p-5 mb-5">
+    <img class="rounded-2xl" src="../../assets/images/final-info-img.jpg" alt="Final Stage Image">
+    <p class="text-white text-center text-lg my-3">გაემგზავრე THE FESTIVAL IN MALTA-ზე!</p>
+    <p class="text-white text-center text-sm">THE FESTIVAL სერიების ფარგლებში, ევროპაბეთი უკვე მეორედ აძლევს პოკერის
+        მოთამაშეებს
+        დაუვიწყარი მოგზაურობის შანსს</p>
+    <div class="prizes bg-middleGray m-auto rounded-xl py-3 my-5">
+        <div class="flex items-center rounded-xl m-auto pr-5">
+            <div class="divider mr-4"></div>
+            <p class="text-white text-sm">15-დან 21 მაისის ჩათვლით მალტა პოკერის ფესტიალს უმასპინძლებს</p>
+        </div>
+    </div>
+    <div class="flex justify-between">
+        <div *ngFor="let prize of categoryPrizes" class="rounded-xl prize bg-lightGray">
+            <div class="top-divider"></div>
+            <p class="list-header flex items-center text-white text-xs p-3">{{ prize[0] }} კატეგორიის საგზურში შედის</p>
+            <div class="list-div bg-middleGray rounded-b-xl">
+                <ul>
+                    <li class="prize-item rounded-xl text-white text-xs bg-darkGray mb-2"><img class="mr-3"
+                            src="{{icons[3]}}" alt="">{{ prize[1] }}</li>
+                    <li class="prize-item rounded-xl text-white text-xs bg-darkGray mb-2"><img class="mr-3"
+                            src="{{icons[1]}}" alt="">{{ prize[2] }}</li>
+                    <li class="prize-item rounded-xl text-white text-xs bg-darkGray mb-2"><img class="mr-3"
+                            src="{{icons[1]}}" alt="">{{ prize[3] }}</li>
+                    <li class="prize-item rounded-xl text-white text-xs bg-darkGray mb-2"><img class="mr-3"
+                            src="{{icons[2]}}" alt="">{{ prize[4] }}</li>
+                    <li class="prize-item rounded-xl text-white text-xs bg-darkGray mb-2"><img class="mr-3"
+                            src="{{icons[4]}}" alt="">{{ prize[5] }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rounded-xl prize bg-lightGray">
+            <div class="top-divider"></div>
+            <p class="list-header flex items-center text-white text-xs p-3">{{categoryC[0]}} კატეგორიის საგზურში შედის
+            </p>
+            <div class="list-div bg-middleGray rounded-b-xl">
+                <ul>
+                    <li class="prize-item rounded-xl text-white text-xs bg-darkGray mb-2"><img class="mr-3"
+                            src="{{icons[3]}}" alt=""> {{categoryC[1]}} </li>
+                    <li class="prize-item rounded-xl text-white text-xs bg-darkGray mb-2"><img class="mr-3"
+                            src="{{icons[1]}}" alt=""> {{categoryC[2]}}</li>
+                    <li class="prize-item rounded-xl text-white text-xs bg-darkGray mb-2"><img class="mr-3"
+                            src="{{icons[2]}}" alt=""> {{categoryC[3]}}</li>
+                    <li class="prize-item rounded-xl text-white text-xs bg-darkGray mb-2"><img class="mr-3"
+                            src="{{icons[4]}}" alt=""> {{categoryC[4]}}</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>

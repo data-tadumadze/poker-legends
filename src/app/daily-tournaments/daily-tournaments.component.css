@@ -1,0 +1,32 @@
+.tournament-img {
+  width: 48%;
+}
+
+.higrollers {
+  background-image: url(../../assets/images/tournament-bg.png);
+  width: 48%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-position: bottom 100% right 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.w95 {
+  width: 95%;
+}
+
+.min120 {
+  min-width: 120px;
+}
+
+.min140 {
+  min-width: 140px;
+}
+
+.main-event {
+  background-image: url(../../assets/images/main-bg.png);
+  background-position: bottom 100% right 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

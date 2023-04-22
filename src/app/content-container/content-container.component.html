@@ -1,7 +1,27 @@
 <div class="main-container bg-darkGray">
-    <app-stages></app-stages>
-    <app-ranking></app-ranking>
-    <app-additional-info></app-additional-info>
-    <app-terms></app-terms>
-    <app-promotions></app-promotions>
+    <app-stages (divSelected)="selectedDiv = $event"></app-stages>
+
+    <!-- Cash Games -->
+    <div *ngIf="selectedDiv === 1">
+        <app-ranking></app-ranking>
+        <app-additional-info></app-additional-info>
+        <app-terms></app-terms>
+        <app-promotions></app-promotions>
+    </div>
+
+    <!-- Spring Series -->
+    <div *ngIf="selectedDiv === 2">
+        <app-tournaments></app-tournaments>
+        <app-tournament-scores></app-tournament-scores>
+        <app-daily-tournaments></app-daily-tournaments>
+        <app-additional-info></app-additional-info>
+        <app-terms></app-terms>
+        <app-promotions></app-promotions>
+    </div>
+
+    <!-- Final Stage -->
+    <div *ngIf="selectedDiv === 3">
+        <app-festival></app-festival>
+        <app-final-travels></app-final-travels>
+    </div>
 </div>

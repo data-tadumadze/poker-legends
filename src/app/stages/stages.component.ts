@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-stages',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./stages.component.css'],
 })
 export class StagesComponent {
- 
+  @Output() divSelected = new EventEmitter<number>();
+  selectedDiv: number = 3;
+
+  selectDiv(divIndex: number) {
+    this.selectedDiv = divIndex;
+    this.divSelected.emit(this.selectedDiv);
+  }
 }

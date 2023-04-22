@@ -15,6 +15,11 @@ import { PromotionsComponent } from './promotions/promotions.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TournamentsComponent } from './tournaments/tournaments.component';
+import { TournamentScoresComponent } from './tournament-scores/tournament-scores.component';
+import { DailyTournamentsComponent } from './daily-tournaments/daily-tournaments.component';
+import { FestivalComponent } from './festival/festival.component';
+import { FinalTravelsComponent } from './final-travels/final-travels.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +34,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AdditionalInfoComponent,
     TermsComponent,
     PromotionsComponent,
+    TournamentsComponent,
+    TournamentScoresComponent,
+    DailyTournamentsComponent,
+    FestivalComponent,
+    FinalTravelsComponent,
   ],
   imports: [
     BrowserModule,

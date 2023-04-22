@@ -8,10 +8,12 @@ module.exports = {
       lightGray: "#44494b",
       white: "#f8f8f8",
       orange: "#ef5a21",
+      yellow: "#ffbe00",
+      brown: "#b78648",
     },
     extend: {
       backgroundImage: {
-        'hero': "url('./assets/images/banner.jgp')",
+        hero: "url('./assets/images/banner.jgp')",
       },
     },
   },

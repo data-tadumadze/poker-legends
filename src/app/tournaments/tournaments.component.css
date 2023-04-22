@@ -1,0 +1,21 @@
+.divider {
+  width: 30%;
+  height: 4px;
+  background-color: #ef5a21;
+  margin: auto;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 1px 10px 1px #ef5a21;
+}
+
+.tournaments-container {
+    width: 99%;
+}
+
+.clock {
+    box-shadow: 1px 1px 10px #ef5a21;
+}
+
+
+
+

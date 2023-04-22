@@ -1,8 +1,28 @@
 <h3 class="text-white text-base mb-5">წესები და პირობები</h3>
 <div class="mb-10">
-    <div *ngFor="let i of questions"
+    <div (click)="clickFirst()"
         class="flex justify-between items-center bg-middleGray rounded-xl mb-2 p-4 hover:bg-lightGray cursor-pointer">
-        <p class="text-white text-xs">{{i}}</p>
+        <p class="text-white text text-xs">როდის იწყება და რა ფორმატით გაიმართება აქცია</p>
+        <img  class="w-5" src="../../assets/icons/down.png" alt="">
+    </div>
+    <div *ngIf="clickedFirst" class="flex justify-between items-center rounded-xl mb-2 p-4">
+        <li class="text-orange text-sm">აქცია იწყება 10 იანვარს და გაიმართება შემდეგი ფორმატით...</li>
+    </div>
+    <div (click)="clickSecond()"
+        class="flex justify-between items-center bg-middleGray rounded-xl mb-2 p-4 hover:bg-lightGray cursor-pointer">
+        <p class="text-white text-xs">როგორ მივიღო აქციაში მონაწილეობა</p>
         <img class="w-5" src="../../assets/icons/down.png" alt="">
+    </div>
+    <div *ngIf="clickedSecond" class="flex justify-between items-center  rounded-xl mb-2 p-4">
+        <li class="text-orange text-sm">აქციაში მონაწილეობის მისაღებად საჭიროა, რომ მომხმარებელმა გააქტიუროს...</li>
+    </div>
+    <div (click)="clickThird()"
+        class="flex justify-between items-center bg-middleGray rounded-xl mb-2 p-4 hover:bg-lightGray cursor-pointer">
+        <p class="text-white text-xs">სხვადასხვა</p>
+        <img class="w-5" src="../../assets/icons/down.png" alt="">
+    </div>
+    <div *ngIf="clickedThird" class="flex justify-between items-center  rounded-xl mb-2 p-4">
+        <li class="text-orange text-sm">ართი ხენწიფე ქოცოფე თე ხენწიფეს სუმი ქომოლი დო სუმი ოსურისქუა მუჟანგსთი ღურადღაქგ
+            ქგმააჭირინუუნი ქიმიჭანუუ არძო დო უწუუ</li>
     </div>
 </div>
