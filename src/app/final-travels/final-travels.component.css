@@ -5,6 +5,10 @@
 .cashgame-div {
   background-color: #282a2a;
   height: 12vh;
+}
+
+.cashgame-div:nth-child(1),
+.cashgame-div:nth-child(2) {
   margin-bottom: 2vh;
 }
 
@@ -12,4 +16,10 @@
   background-color: #282a2a;
   height: 19vh;
   margin-bottom: 2vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .malta-gtd {
+    width: 95%;
+  }
 }

@@ -3,10 +3,8 @@
 }
 
 .leaderboard-header {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin-bottom: 10px;
+  width: 80% !important;
+  margin-left: 2%;
 }
 
 .leaderboard-container {
